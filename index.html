@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home_page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body >
+  <div class="header">
+  <h1>Awosome Lokhara</h1>
+  <p>The Heart Of City Guwahati.</p>
+  
+<div class="navbar">
+    <a link href="contact.html" class="right">Contact Me</a>
+    <a link href="turism.html" class="right">Tourist Attraction</a>
+    <a link href="video.html" class="right">Videos</a>
+    <a link href="document.html" class="right">Documents</a>
+    <a link href="faci.html" class="right" >Facilities</a>
+    <a link href="index.html" class="right">Home</a>
+ 
+  
+</div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="image/balaji.jpg" style="width:100%">
+    <div class="text">Balaji Mandir</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="image/Sarusajai-Stadium.jpg" style="width:100%">
+    <div class="text">Sarusajai stadium</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="image/frozenplanet.jpg" style="width:100%">
+    <div class="text">Frozen Planet</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4/ 4</div>
+    <img src="image/maniram.jpg" style="width:100%">
+    <div class="text">Maniram Dewan Trade Center</div>
+  </div>
+  
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+</div>
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+     <div class="profile">
+       <div id="wrapp">
+         <div class="box">
+         <img src="image/profile.jpg" alt=""><br> 
+        
+         
+         <p> <h3>Developer</h3> 
+          <h4>
+              Name: Dipumani Pathak<br>
+             Class: 6th Semester<br>
+             Dept: Information Technology<br>
+             Roll No: BT/IT/18-07(L)<br>
+          </h4>
+          </p>
+          
+        </div>
+        
+        </div>
+     </div>
+    </div>
+  <div class="main">
+    <h2>My Village,My Home Town Lokhara</h2>
+    <h5>By Author Dipumani, June 5, 2020</h5>
+    
+    
+    <p>My village is a place that I like to visit in my holidays or whenever I feel tired 
+    and want to relax. Actually My Village is situated in Guwahati So that It is not as
+    like Other village it is essential Part of Guwahati, Assam. It is surrounded By Many
+    Mighty Buildings,Industries,and Many Facilities Like Swimming Pool, Gym, Medical, Bank
+    Market etc.Its also  surrounded by many religious temple like Triupati Balaji,Budha Temple,
+     Shiv Temple and Also  Garbhanga Reserve Forest etc.<br> 
+       <br> "So if you visit in Guwahati then you must visit my village Lokhara".<br>    </p>
+    <br>
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="navbar">
+    <a link href="faci.html" class="right">Next Page&nbsp;&gt &gt</a>
+  </div>
+  <h3>@developed By Dipumani Pathak</h3>
+</div>
+
+</body>
+</html>
